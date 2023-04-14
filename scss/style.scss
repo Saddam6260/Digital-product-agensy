@@ -13,7 +13,11 @@
 $sm: "375px";
 $lg: "1440px";
 $aveta-demo: "Aveta-Demo";
-$black: #0000;
+$darkgray: #565656;
+$thin-gray: #e4e4e4;
+$facebook: #3b5998;
+$twiter: #55acee;
+$linkdin: #007ab9;
 
 /*** global Style ***/
 * {
@@ -42,14 +46,16 @@ h3{
     font-size: 18px;
 }
 .common-pera{
-    font-size: 14px;
+    font-size: 12px;
+    color: $darkgray;
+    line-height: 18px;
 }
 .container{
     max-width: 335px;
     margin: auto;
 }
 
-@include media($sm) {
+@include media($lg) {
     h1{
         font-size: 40px;
     }
@@ -58,8 +64,11 @@ h3{
     }
     .common-pera{
         font-size: 16px;
+        line-height: 22px;
     }
     .container{
         max-width: 1200px;
     }
 }
+
+@import "./footer";

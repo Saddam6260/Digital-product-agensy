@@ -37,7 +37,9 @@ h3 {
 }
 
 .common-pera {
-  font-size: 14px;
+  font-size: 12px;
+  color: #565656;
+  line-height: 18px;
 }
 
 .container {
@@ -45,7 +47,7 @@ h3 {
   margin: auto;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 1440px) {
   h1 {
     font-size: 40px;
   }
@@ -54,9 +56,114 @@ h3 {
   }
   .common-pera {
     font-size: 16px;
+    line-height: 22px;
   }
   .container {
     max-width: 1200px;
+  }
+}
+footer .container {
+  padding: 40px 0px 20px 0px;
+  border-top: 1px solid #e4e4e4;
+}
+footer .container .contact div:nth-child(1) .img-wrap {
+  width: 80px;
+}
+footer .container .contact div:nth-child(1) .img-wrap img {
+  width: 100%;
+}
+footer .container .contact div:nth-child(1) p {
+  margin: 20px 0px 20px 0px;
+}
+footer .container .contact div:nth-child(1) .social {
+  display: flex;
+  column-gap: 16px;
+}
+footer .container .contact div:nth-child(1) .social button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .contact div:nth-child(1) .social button a {
+  color: white;
+  font-size: 14px;
+}
+footer .container .contact div:nth-child(1) .social .facebook {
+  background-color: #3b5998;
+}
+footer .container .contact div:nth-child(1) .social .twiter {
+  background-color: #55acee;
+}
+footer .container .contact div:nth-child(1) .social .linkdin {
+  background-color: #007ab9;
+}
+footer .container .contact div:nth-child(2) {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 30px;
+}
+footer .container .contact div:nth-child(2) ul {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 16px;
+}
+footer .container .contact div:nth-child(2) ul h5 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+footer .container .contact div:nth-child(2) ul li a {
+  font-size: 12px;
+  color: black;
+}
+footer .container .copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+footer .container .copyright a {
+  font-size: 12px;
+  color: #e4e4e4;
+}
+
+@media only screen and (min-width: 1440px) {
+  footer .container {
+    padding: 60px 0px 23px 0px;
+  }
+  footer .container .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .container .contact div:nth-child(1) {
+    width: 270px;
+  }
+  footer .container .contact div:nth-child(1) .img-wrap {
+    width: 106px;
+  }
+  footer .container .contact div:nth-child(1) p {
+    margin: 26px 0px 40px 0px;
+  }
+  footer .container .contact div:nth-child(1) .social button {
+    width: 36px;
+    height: 36px;
+  }
+  footer .container .contact div:nth-child(1) .social button a {
+    color: white;
+    font-size: 16px;
+  }
+  footer .container .contact div:nth-child(2) {
+    margin-top: 0px;
+    flex-flow: row wrap;
+    column-gap: 110px;
+  }
+  footer .container .contact div:nth-child(2) ul h5 {
+    font-size: 20px;
+  }
+  footer .container .copyright a {
+    font-size: 14px;
   }
 }
 
