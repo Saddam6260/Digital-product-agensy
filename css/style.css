@@ -1,5 +1,63 @@
+/*** Fonts ***/
+@font-face {
+  font-family: "Aveta-Demo";
+  src: url(../font/AvertaDemo-Regular.otf);
+  font-weight: 400;
+}
+/*** Variales ***/
+/*** global Style ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aveta-Demo";
+  font-weight: 400;
+}
+
+button {
+  background-color: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*** Common Class ***/
 h1 {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.common-pera {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 335px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 375px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .common-pera {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
