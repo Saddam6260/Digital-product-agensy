@@ -18,6 +18,7 @@ $thin-gray: #e4e4e4;
 $facebook: #3b5998;
 $twiter: #55acee;
 $linkdin: #007ab9;
+$blue: #2639ed;
 
 /*** global Style ***/
 * {
@@ -41,9 +42,11 @@ a {
 /*** Common Class ***/
 h1{
     font-size: 24px;
+    font-weight: bold;
 }
 h3{
     font-size: 18px;
+    font-weight: bold;
 }
 .common-pera{
     font-size: 12px;
@@ -53,6 +56,15 @@ h3{
 .container{
     max-width: 335px;
     margin: auto;
+}
+.btn{
+    padding: 15px 30px;
+    background-color: $blue;
+    border-radius: 45px;
+    a{
+        font-size: 16px;
+        color: white;
+    }
 }
 
 @include media($lg) {
@@ -68,6 +80,13 @@ h3{
     }
     .container{
         max-width: 1200px;
+    }
+    .btn{
+        padding: 20px 40px;
+
+        a{
+            font-size: 20px;
+        }
     }
 }
 

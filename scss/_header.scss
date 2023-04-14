@@ -24,13 +24,31 @@ header {
       }
     }
   }
+  main {
+    .container {
+      .content {
+        margin-top: 30px;
+        p {
+          padding: 25px 0px 20px 0px;
+        }
+      }
+    }
+    .main-img {
+      max-width: 335px;
+      margin: 40px auto 0px auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @include media($lg) {
   header {
     min-height: 100vh;
     .navber {
-      padding: 42px 0px 0px 0px;
+      padding: 42px 0px 47px 0px;
 
       .container {
         display: flex;
@@ -47,17 +65,36 @@ header {
         .link-wrap {
           display: block;
 
-          ul{
+          ul {
             display: flex;
             align-items: center;
             column-gap: 60px;
 
-            li a{
-                font-size: 16px;
-                color: black;
+            li a {
+              font-size: 16px;
+              color: black;
             }
           }
         }
+      }
+    }
+    main {
+      position: relative;
+      .container {
+        padding-top: 90px;
+        .content {
+          max-width: 471px;
+          p {
+            padding: 40px 0px 33px 0px;
+          }
+        }
+      }
+      .main-img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 754px;
+        margin: 0px;
       }
     }
   }

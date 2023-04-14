@@ -30,10 +30,12 @@ a {
 /*** Common Class ***/
 h1 {
   font-size: 24px;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .common-pera {
@@ -45,6 +47,16 @@ h3 {
 .container {
   max-width: 335px;
   margin: auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #2639ed;
+  border-radius: 45px;
+}
+.btn a {
+  font-size: 16px;
+  color: white;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -60,6 +72,12 @@ h3 {
   }
   .container {
     max-width: 1200px;
+  }
+  .btn {
+    padding: 20px 40px;
+  }
+  .btn a {
+    font-size: 20px;
   }
 }
 header {
@@ -83,13 +101,26 @@ header .navber .container .nav-head button span {
 header .navber .container .link-wrap {
   display: none;
 }
+header main .container .content {
+  margin-top: 30px;
+}
+header main .container .content p {
+  padding: 25px 0px 20px 0px;
+}
+header main .main-img {
+  max-width: 335px;
+  margin: 40px auto 0px auto;
+}
+header main .main-img img {
+  width: 100%;
+}
 
 @media only screen and (min-width: 1440px) {
   header {
     min-height: 100vh;
   }
   header .navber {
-    padding: 42px 0px 0px 0px;
+    padding: 42px 0px 47px 0px;
   }
   header .navber .container {
     display: flex;
@@ -113,6 +144,25 @@ header .navber .container .link-wrap {
   header .navber .container .link-wrap ul li a {
     font-size: 16px;
     color: black;
+  }
+  header main {
+    position: relative;
+  }
+  header main .container {
+    padding-top: 90px;
+  }
+  header main .container .content {
+    max-width: 471px;
+  }
+  header main .container .content p {
+    padding: 40px 0px 33px 0px;
+  }
+  header main .main-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    max-width: 754px;
+    margin: 0px;
   }
 }
 footer .container {
@@ -166,6 +216,7 @@ footer .container .contact div:nth-child(2) ul {
   row-gap: 16px;
 }
 footer .container .contact div:nth-child(2) ul h5 {
+  font-weight: bold;
   margin-bottom: 8px;
   font-size: 18px;
 }
