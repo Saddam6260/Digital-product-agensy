@@ -310,6 +310,64 @@ header main .main-img img {
     margin-bottom: 40px;
   }
 }
+/*** Client Say ***/
+#client-say .container .heading {
+  text-align: start;
+  margin-bottom: 30px;
+}
+#client-say .container .heading h1 {
+  margin-bottom: 10px;
+}
+#client-say .container .slider-wrap .client-img {
+  max-width: 330px;
+}
+#client-say .container .slider-wrap .client-img img {
+  max-width: 100%;
+}
+#client-say .container .slider-wrap .client-review {
+  margin-bottom: 30px;
+}
+#client-say .container .slider-wrap .client-review h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+#client-say .container .slider-wrap .clients {
+  width: 310px;
+}
+#client-say .container .slider-wrap .clients img {
+  width: 335px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #client-say .container .heading {
+    text-align: center;
+    margin-bottom: 113px;
+  }
+  #client-say .container .heading h1 {
+    margin-bottom: 17px;
+  }
+  #client-say .container .slider-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  #client-say .container .slider-wrap .client-img {
+    max-width: 389px;
+  }
+  #client-say .container .slider-wrap .client-review {
+    margin-bottom: 0px;
+    width: 412px;
+    margin-right: 50px;
+  }
+  #client-say .container .slider-wrap .client-review h5 {
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
+  #client-say .container .slider-wrap .clients {
+    width: 348px;
+  }
+}
 #subscribe {
   margin: 50px 0px 60px 0px;
 }
@@ -404,11 +462,11 @@ header main .main-img img {
     display: block;
     position: absolute;
     z-index: 1;
-    width: 455px;
+    width: 490px;
     height: 100%;
     top: 0px;
     right: 0px;
-    border-radius: 90px 60px 60px 170px;
+    border-radius: 90px 60px 60px 150px;
     background-color: #2639ed;
   }
 }
