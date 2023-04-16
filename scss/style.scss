@@ -19,6 +19,7 @@ $facebook: #3b5998;
 $twiter: #55acee;
 $linkdin: #007ab9;
 $blue: #2639ed;
+$thinsky: #f4f9ff;
 
 /*** global Style ***/
 * {
@@ -92,4 +93,5 @@ h3{
 
 @import "./header";
 @import "./agency-since";
+@import "./subscribe";
 @import "./footer";

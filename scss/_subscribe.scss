@@ -1,0 +1,94 @@
+#subscribe {
+  margin: 50px 0px 60px 0px;
+  .container {
+    .content-wrap {
+      max-width: 335px;
+      background-color: $thinsky;
+      border-radius: 20px;
+      padding: 20px 15px;
+
+      .content {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+        div:nth-child(1) {
+          h1 {
+            margin-bottom: 10px;
+          }
+        }
+        div:nth-child(2) {
+          width: 300px;
+          height: 45px;
+          padding: 5px 10px;
+          display: flex;
+          justify-content: space-between;
+          background: #ffffff;
+          border: 1px solid #f1f1f1;
+          box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+          border-radius: 30px;
+          align-items: center;
+          input {
+            border: none;
+            outline: none;
+          }
+          button {
+            padding: 10px 20px;
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .right-bg {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  #subscribe {
+    margin: 92px 0px 126px 0px;
+    .container {
+      .content-wrap {
+        max-width: 1197px;
+        background-color: $thinsky;
+        border-radius: 75px;
+        padding: 98px 98px 99px 92px;
+
+        .content {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          div:nth-child(1) {
+            h1 {
+              margin-bottom: 17px;
+            }
+          }
+          div:nth-child(2) {
+            width: 480px;
+            height: 80px;
+            border-radius: 60px;
+            justify-content: space-between;
+            column-gap: 57px;
+            input {
+              border: none;
+              outline: none;
+            }
+            ::placeholder {
+              font-size: 16px;
+              color: $darkgray;
+            }
+            button {
+              padding: 20px 40px;
+              border-radius: 60px;
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
