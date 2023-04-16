@@ -311,60 +311,68 @@ header main .main-img img {
   }
 }
 /*** Client Say ***/
-#client-say .container .heading {
+#client-say div {
+  max-width: 335px;
+  margin: auto;
+}
+#client-say div .heading {
   text-align: start;
   margin-bottom: 30px;
 }
-#client-say .container .heading h1 {
+#client-say div .heading h1 {
   margin-bottom: 10px;
 }
-#client-say .container .slider-wrap .client-img {
-  max-width: 330px;
+#client-say div .slider-wrap .client-img {
+  max-width: 310px;
 }
-#client-say .container .slider-wrap .client-img img {
+#client-say div .slider-wrap .client-img img {
   max-width: 100%;
 }
-#client-say .container .slider-wrap .client-review {
-  margin-bottom: 30px;
+#client-say div .slider-wrap .client-review {
+  margin: 30px 0px;
 }
-#client-say .container .slider-wrap .client-review h5 {
+#client-say div .slider-wrap .client-review h5 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 14px;
 }
-#client-say .container .slider-wrap .clients {
+#client-say div .slider-wrap .clients {
   width: 310px;
 }
-#client-say .container .slider-wrap .clients img {
+#client-say div .slider-wrap .clients img {
   width: 335px;
 }
 
 @media only screen and (min-width: 1440px) {
-  #client-say .container .heading {
+  #client-say div {
+    max-width: initial;
+  }
+  #client-say div .heading {
     text-align: center;
     margin-bottom: 113px;
   }
-  #client-say .container .heading h1 {
+  #client-say div .heading h1 {
     margin-bottom: 17px;
   }
-  #client-say .container .slider-wrap {
+  #client-say div .slider-wrap {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    margin-left: 107px;
   }
-  #client-say .container .slider-wrap .client-img {
+  #client-say div .slider-wrap .client-img {
     max-width: 389px;
   }
-  #client-say .container .slider-wrap .client-review {
+  #client-say div .slider-wrap .client-review {
     margin-bottom: 0px;
     width: 412px;
-    margin-right: 50px;
+    margin: 0px 42px 0px 67px;
   }
-  #client-say .container .slider-wrap .client-review h5 {
+  #client-say div .slider-wrap .client-review h5 {
     font-size: 24px;
     margin-bottom: 21px;
   }
-  #client-say .container .slider-wrap .clients {
+  #client-say div .slider-wrap .clients {
     width: 348px;
   }
 }
