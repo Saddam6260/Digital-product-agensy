@@ -358,14 +358,20 @@ header main .main-img img {
     margin: 92px 0px 126px 0px;
   }
   #subscribe .container .content-wrap {
+    position: relative;
     max-width: 1197px;
     background-color: #f4f9ff;
     border-radius: 75px;
-    padding: 98px 98px 99px 92px;
+    padding: 0px;
+    height: 292px;
+    padding: 98px 98px 98px 92px;
   }
   #subscribe .container .content-wrap .content {
+    position: absolute;
+    z-index: 2;
     flex-flow: row wrap;
     justify-content: space-between;
+    column-gap: 105px;
     align-items: center;
   }
   #subscribe .container .content-wrap .content div:nth-child(1) h1 {
@@ -381,6 +387,7 @@ header main .main-img img {
   #subscribe .container .content-wrap .content div:nth-child(2) input {
     border: none;
     outline: none;
+    margin-left: 25px;
   }
   #subscribe .container .content-wrap .content div:nth-child(2) ::placeholder {
     font-size: 16px;
@@ -392,6 +399,17 @@ header main .main-img img {
   }
   #subscribe .container .content-wrap .content div:nth-child(2) button a {
     font-size: 16px;
+  }
+  #subscribe .container .content-wrap .right-bg {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 455px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    border-radius: 90px 60px 60px 170px;
+    background-color: #2639ed;
   }
 }
 footer .container {

@@ -51,14 +51,20 @@
     margin: 92px 0px 126px 0px;
     .container {
       .content-wrap {
+        position: relative;
         max-width: 1197px;
         background-color: $thinsky;
         border-radius: 75px;
-        padding: 98px 98px 99px 92px;
+        padding: 0px;
+        height: 292px;
+        padding: 98px 98px 98px 92px;
 
         .content {
+          position: absolute;
+          z-index: 2;
           flex-flow: row wrap;
           justify-content: space-between;
+          column-gap: 105px;
           align-items: center;
           div:nth-child(1) {
             h1 {
@@ -74,6 +80,7 @@
             input {
               border: none;
               outline: none;
+              margin-left: 25px;
             }
             ::placeholder {
               font-size: 16px;
@@ -87,6 +94,17 @@
               }
             }
           }
+        }
+        .right-bg{
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 455px;
+            height: 100%;
+            top: 0px;
+            right: 0px;
+            border-radius: 90px 60px 60px 170px;
+            background-color: $blue;
         }
       }
     }
