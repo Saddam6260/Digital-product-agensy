@@ -241,6 +241,10 @@ header main .main-img img {
     width: 141px;
   }
 }
+/*** Help your business ***/
+#help-your-business {
+  margin-top: 50px;
+}
 /*** Agency Since ***/
 #agency-since {
   padding: 70px 0px;
