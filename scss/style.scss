@@ -5,9 +5,9 @@
   font-weight: 400;
 }
 @mixin media($screen) {
-    @media only screen and (min-width: $screen) {
-        @content;
-    }
+  @media only screen and (min-width: $screen) {
+    @content;
+  }
 }
 /*** Variales ***/
 $sm: "375px";
@@ -20,6 +20,9 @@ $twiter: #55acee;
 $linkdin: #007ab9;
 $blue: #2639ed;
 $thinsky: #f4f9ff;
+$thin-pink: #fff2f8;
+$thin-green: #deffee;
+$peach: #fff7e3;
 
 /*** global Style ***/
 * {
@@ -41,54 +44,54 @@ a {
 }
 
 /*** Common Class ***/
-h1{
-    font-size: 24px;
-    font-weight: bold;
+h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
-h3{
-    font-size: 18px;
-    font-weight: bold;
+h3 {
+  font-size: 18px;
+  font-weight: bold;
 }
-.common-pera{
-    font-size: 12px;
-    color: $darkgray;
-    line-height: 18px;
+.common-pera {
+  font-size: 12px;
+  color: $darkgray;
+  line-height: 18px;
 }
-.container{
-    max-width: 335px;
-    margin: auto;
+.container {
+  max-width: 335px;
+  margin: auto;
 }
-.btn{
-    padding: 15px 30px;
-    background-color: $blue;
-    border-radius: 45px;
-    a{
-        font-size: 16px;
-        color: white;
-    }
+.btn {
+  padding: 15px 30px;
+  background-color: $blue;
+  border-radius: 45px;
+  a {
+    font-size: 16px;
+    color: white;
+  }
 }
 
 @include media($lg) {
-    h1{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 24px;
-    }
-    .common-pera{
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .container{
-        max-width: 1200px;
-    }
-    .btn{
-        padding: 20px 40px;
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .common-pera {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  .btn {
+    padding: 20px 40px;
 
-        a{
-            font-size: 20px;
-        }
+    a {
+      font-size: 20px;
     }
+  }
 }
 
 @import "./header";
